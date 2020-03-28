@@ -27,4 +27,12 @@ router.get("/signout", (req, res) => {
   res.redirect("/");
 });
 
+router.post('/login',
+  passport.authenticate('local', {
+    successRedirect: '/',
+    failureRedirect: '/login',
+    failureFlash: true
+  })
+);
+
 export default router;

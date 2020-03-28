@@ -51,6 +51,20 @@ class LandingPage extends Component {
               GitHub
             </a>.
           </p>
+          <form action="/auth/login" autocomplete='off' method="post">
+            <div>
+              <label>Username:</label>
+              <input type="text" name="username" autocomplete="off" />
+            </div>
+            <div>
+              <label>Password:</label>
+              <input type="password" name="password" autocomplete="off" />
+            </div>
+            <div>
+              <input type="submit" value="Log In" />
+            </div>
+          </form>
+          {/*
           <div className="signin-buttons">
             <div>
               <a href="/auth/twitter" className="signin-button twitter-button">
@@ -75,7 +89,7 @@ class LandingPage extends Component {
                 <FaUserSecret className="logo-icon" /> &nbsp;Enter as guest
               </button>
             </div>
-          </div>
+          </div>*/}
         </div>
       </div>
     </div>
